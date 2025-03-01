@@ -56,7 +56,7 @@ for row in range(2, worksheet.nrows):
     # Log in to the SMTP server and send the email
     try:
         with smtplib.SMTP('smtp.qiye.aliyun.com', 25) as server:
-            server.login(sender_email, 'C5h2e1n5')
+            server.login(sender_email, 'yourpasswordhere')
             server.sendmail(sender_email, cc, message.as_string())
             server.quit()
             print("Email sent successfully!")
